@@ -1,3 +1,4 @@
+import AdopterData from './components/AdopterData';
 import Header from './components/Header';
 import PetAdoptionForm from './components/PetAdoptionForm';
 import "./myApp.css";
@@ -14,7 +15,9 @@ const App = () => {
     >
       <Header message={"Pet Adoption Form"} />
       <PetAdoptionForm />
+      {/* <AdopterData /> */}
     </div>
   );
 };
 export default App;
+2
