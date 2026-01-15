@@ -94,6 +94,7 @@ const PetAdoptionForm = () => {
         }}
           onChange={changeEvent}
         />
+        <b> <small>{errors.petName}</small> </b>
       </div>
 
       <div className='PetType'>
@@ -114,6 +115,7 @@ const PetAdoptionForm = () => {
         }}
           onChange={changeEvent}
         />
+        <b> <small>{errors.breed}</small> </b>
       </div>
 
       <div className='adopterName'>
@@ -123,7 +125,7 @@ const PetAdoptionForm = () => {
         }}
           onChange={changeEvent}
         />
-
+        <b> <small>{errors.adopterName}</small> </b>
       </div>
 
       <div className='email'>
@@ -133,6 +135,7 @@ const PetAdoptionForm = () => {
         }}
           onChange={changeEvent}
         />
+        <b> <small>{errors.email}</small> </b>
       </div>
 
       <div className='phone'>
@@ -142,6 +145,7 @@ const PetAdoptionForm = () => {
         }}
           onChange={changeEvent}
         />
+        <b> <small>{errors.phone}</small> </b>
       </div>
 
       <button type="submit" onClick={handleSubmit}>Submit</button>      
